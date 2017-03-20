@@ -1,0 +1,10 @@
+#Nav{
+	height: 45px;
+	width: 100%;
+	background-color: #000;
+}
+
+#Nav .msg{
+	color: #fff;
+	line-height: 45px;
+}
