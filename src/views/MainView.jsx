@@ -10,13 +10,16 @@ export default class MainView extends Component {
   render () {
     return (
       <div className='main-view'>
+
+        <div className='view'>
+          {renderRoutes(this.props.route.childRoutes)}
+        </div>
+
         <div className='btn-group'>
           <Link to='/foo' className='btn' activeClassName='active'>To Foo</Link>
           <Link to='/bar' className='btn' activeClassName='active'>To Bar</Link>
         </div>
-        <div className='view'>
-          {renderRoutes(this.props.route.childRoutes)}
-        </div>
+
       </div>
     )
   }
