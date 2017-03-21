@@ -16,10 +16,12 @@ export default class MainView extends Component {
         </div>
 
         <div className='btn-group'>
-          <Link to='/foo' className='btn' activeClassName='active'>To Foo</Link>
-          <Link to='/bar' className='btn' activeClassName='active'>To Bar</Link>
+          <Link to='/#' className='btn' activeClassName='active'>首页</Link>
+          <Link to='/logistics' className='btn' activeClassName='active'>物流</Link>
+          <Link to='/car' className='btn' activeClassName='active'>购物车</Link>
+          <Link to='/mine' className='btn' activeClassName='active'>我的淘宝</Link>
+          <Link to='/more' className='btn' activeClassName='active'>更多</Link>
         </div>
-
       </div>
     )
   }

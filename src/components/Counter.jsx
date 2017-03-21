@@ -10,6 +10,7 @@ class Counter extends Component {
     actions: PropTypes.object,
     counter: PropTypes.object
   }
+
   handleClick = () => {
     this.props.actions.increment()
   }

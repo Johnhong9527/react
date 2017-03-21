@@ -7,7 +7,7 @@ export default class FooView extends Component {
   render () {
     return (
       <p>
-        I'm {this.state.name}.
+        I'm {this.state.name}
       </p>
     )
   }

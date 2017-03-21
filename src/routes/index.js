@@ -1,6 +1,11 @@
 import MainView from 'views/MainView'
-import FooView from 'views/FooView'
-import BarView from 'views/BarView'
+import Logistics from 'views/Logistics'
+import Car from 'views/Car'
+import Mine from 'views/Mine'
+// import FooView from 'views/FooView'
+// import BarView from 'views/BarView'
+import Hello from 'components/Hello'
+// import Counter from 'components/Counter'
 
 export default [
   {
@@ -8,12 +13,20 @@ export default [
     component: MainView,
     childRoutes: [
       {
-        path: '/foo',
-        component: FooView
+        path: '/logistics',
+        component: Logistics
       },
       {
-        path: '/bar',
-        component: BarView
+        path: '/car',
+        component: Car
+      },
+      {
+        path: '/mine',
+        component: Mine
+      },
+      {
+        path: '/more',
+        component: Hello
       }
     ]
   }

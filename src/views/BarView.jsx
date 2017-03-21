@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './BarView.css'
 
 export default class BarView extends Component {
   state = {
@@ -6,9 +7,9 @@ export default class BarView extends Component {
   }
   render () {
     return (
-      <p>
-        I'm {this.state.name}.
-      </p>
+      <div id='barBox'>
+        <p>I'm {this.state.name}</p>
+      </div>
     )
   }
 }
