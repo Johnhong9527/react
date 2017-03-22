@@ -2,9 +2,12 @@ import MainView from 'views/MainView'
 import Logistics from 'views/Logistics'
 import Car from 'views/Car'
 import Mine from 'views/Mine'
+import More from 'views/More'
+// import Info from 'views/Info'
+import Hello from 'components/Hello'
 // import FooView from 'views/FooView'
 // import BarView from 'views/BarView'
-import Hello from 'components/Hello'
+// import Hello from 'components/Hello'
 // import Counter from 'components/Counter'
 
 export default [
@@ -13,21 +16,33 @@ export default [
     component: MainView,
     childRoutes: [
       {
-        path: '/logistics',
+        path: '/react/Hello',
+        component: Hello
+      },
+      {
+        // 物流
+        path: '/react/logistics',
         component: Logistics
       },
       {
-        path: '/car',
+        // 购物车
+        path: '/react/car',
         component: Car
       },
       {
-        path: '/mine',
+        // 个人中心
+        path: '/react/mine',
         component: Mine
       },
       {
-        path: '/more',
-        component: Hello
+        // 更多
+        path: '/react/more',
+        component: More
       }
     ]
+  },
+  {
+    path: '/Hello',
+    component: Hello
   }
 ]

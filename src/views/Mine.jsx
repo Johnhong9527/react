@@ -10,7 +10,7 @@ export default class Mine extends Component {
   }
   render () {
     return (
-      <div id='Mine'>
+      <div id='Mine' title={this.state.title}>
         <div className='title'>{this.state.title}</div>
       </div>
     )

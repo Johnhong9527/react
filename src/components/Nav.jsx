@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+// import { renderRoutes } from 'react-router-config'
 import './Nav.css'
 
 export default class Nav extends Component {
@@ -7,6 +8,7 @@ export default class Nav extends Component {
     this.state = {
       msg: '标题'
     }
+    console.log(this)
   }
   render () {
     return (
